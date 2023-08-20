@@ -105,6 +105,7 @@ a:hover {
 }
 .small-nav-links.open {
     max-height: 300px;
+    
 
 }
 .ham-icon.open span:first-child {
@@ -128,3 +129,69 @@ a:hover {
 .ham-icon span:first-child{
    transform: none; 
 }
+.profile-img {
+   
+    border-radius: 50%
+    ;
+    width: 300px;
+    /* height: 300px; */
+}
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing:border-box ;
+    min-height: fit-content;
+}
+.section-container {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    /* background-color: red;
+    align-items: center; */
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+    /* background-color: pink; */
+}
+.section__pic-container {
+    display: flex;
+    width: 400px;
+   
+    height: 400px;
+    margin: auto 0;
+    justify-content: flex-end;
+  /* background-color: red; */
+
+}
+.section__text {
+    align-self: center;
+    text-align: center;
+    /* background-color: green; */
+}
+.section__text p {
+    font-weight: 600
+    
+}
+.section__text__p1 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
