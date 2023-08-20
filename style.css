@@ -14,7 +14,9 @@ html {
     scroll-behavior: smooth;
 }
 p {
-    color: pink;
+    /* color: #2a9d8f; */
+    /* color: black; */
+    color: rgb(85, 85, 85);
 }
 
 /* added base transisiont  */
@@ -180,9 +182,14 @@ section {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
+.section__text__p2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
 .title {
     font-size: 3rem;
     text-align: center;
+    /* color: #2a9d8f; */
 }
 #socials-container {
     display: flex;
@@ -193,5 +200,42 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+}
+
+
+/* Buttons  */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn {
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0.3rem;
+    width: 8rem;
+    border-radius: 2rem;
+    /* background-color: white; */
+}
+.btn-color-1,.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+    
+}
+.btn-color-1, .btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+.btn-color-1:hover {
+    background: rgb(0,0,0);
+}
+.btn-color-2 {
+    background: none;
+}
+.btn-color-hover {
+    border: rgb(255,255,255) 0.1rem solid;
 }
 
