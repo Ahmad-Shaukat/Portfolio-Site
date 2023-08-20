@@ -1,0 +1,10 @@
+@media screen and (max-width: 1200px) {
+    #big-nav{
+        display: none;
+        background-color: blue;
+    }
+    #small-nav {
+        display: flex;
+        background-color: teal;
+    }
+}
