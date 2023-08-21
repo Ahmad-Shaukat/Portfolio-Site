@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
+
 <body>
     <nav id="big-nav">
         <div class="logo">Ahmad Shaukat</div>
@@ -29,7 +31,7 @@
             </div>
             <div class="small-nav-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()" >Experience</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contacts" onclick="toggleMenu()">About</a></li>
             </div>
@@ -46,16 +48,53 @@
             <h1 class="title">Ahmad Shaukat</h1>
             <p class="section__text__p2">Software Engineer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Ahmad_Shaukat_resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/Ahmad_Shaukat_resume.pdf')">Download
+                    Resume</button>
                 <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href = `https://`">
-                <img src="./assets/github.png" alt="My linkedin profile" class="icon" onclick="location.href = `https://`">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon"
+                    onclick="location.href = `https://`">
+                <img src="./assets/github.png" alt="My linkedin profile" class="icon"
+                    onclick="location.href = `https://`">
             </div>
         </div>
     </section>
-    
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about_img.jpg" alt="person coding image" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ year Full Stack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="experience icon" class="icon">
+                        <h3>Education</h3>
+                        <p>App Academy Software Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum corporis illo, dolor esse
+                        autem nihil vero vel dolore reprehenderit veritatis modi consectetur ut quo. Dolor ullam
+                        minus quidem nesciunt? Id.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        
+    </section>
     <script src="script.js"></script>
 </body>
+
 </html>
