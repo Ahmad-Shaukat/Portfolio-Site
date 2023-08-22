@@ -1,10 +1,137 @@
+@media screen and (max-width:1400px){
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+}
+
+
+
 @media screen and (max-width: 1200px) {
     #big-nav{
         display: none;
-        background-color: blue;
+        /* background-color: blue; */
     }
     #small-nav {
         display: flex;
-        background-color: teal;
+        /* background-color: teal; */
     }
+    #experience, .experience-details-container {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        /* background-color: green; */
+    }
+    .about-containers {
+        display: block;
+        padding: 1rem;
+    }
+    .details-container {
+        margin-bottom: 1rem;
+    }
+    .about-pic {
+        width: 275px;
+        /* border: 2px solid red; */
+    }
+    
+    #profile,.section-container {
+        display: block;
+        /* background-color: green; */
+    }
+    #profile {
+        width: 300px;
+    }
+    
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+        /* background-color: red; */
+        /* width: 400px; */
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 325px;
+    }
+}
+@media screen and (max-width: 600px) {
+#contact, footer {
+    height: 40vh;
+    /* background-color: red; */
+    margin-bottom: 0;
+    /* width: fit-content; */
+
+}
+article {
+    font-size: 1rem;
+
+}
+footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+}
+.about-containers, .contact-info-upper-container, btn-container {
+    flex-wrap: wrap;
+}
+.contact-info-container {
+    margin: 0;
+}
+.contact-info-container p, .nav-links li a {
+    font-size: 1rem;
+}
+.expereince-sub-title {
+    font-size: 1.25rem;
+}
+.logo {
+    font-size: smaller;
+}
+.nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+.section__pic.container {
+    width: auto;
+    height: 46vh;
+    justify-content: center;
+    margin: auto;
+}
+.section__text__pe {
+    font-size: 1.2rem;
+}
+.profile-img {
+    width: 200px;
+    height: 250px;
+    margin: auto;
+}
+.title {
+    font-size: 2rem;
+}
+.about-pic {
+    margin-top: 1.5rem;
+    /* background-color: red;
+    border: 2px solid red; */
+}
+.cover p {
+    font-size: 0.7rem;
+}
+.cover {
+    /* background-color: red; */
+    gap: 0.1rem;
+    /* padding: 0.5rem; */
+    /* gap: 5px; */
+    margin: auto;
+}
+.title {
+    padding: 0.5rem;
+}
+.about-containers button{
+    font-size: 0.4rem;
+    /* background-color: green; */
+    width: 5rem;
+}
 }
