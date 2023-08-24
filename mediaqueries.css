@@ -7,7 +7,7 @@
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1285px) {
     #big-nav{
         display: none;
         /* background-color: blue; */
@@ -56,6 +56,9 @@
     .section__pic-container {
         width: 275px;
         height: 325px;
+    }
+    .project-text-cover {
+        font-size: 0.8rem;
     }
 }
 @media screen and (max-width: 600px) {
@@ -118,6 +121,7 @@ footer nav {
 }
 .cover p {
     font-size: 0.7rem;
+    /* background-color: red; */
 }
 .cover {
     /* background-color: red; */
@@ -134,4 +138,7 @@ footer nav {
     /* background-color: green; */
     width: 5rem;
 }
+/* .cover p {
+    font-size: 5px;
+} */
 }
