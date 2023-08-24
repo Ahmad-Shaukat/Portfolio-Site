@@ -186,6 +186,7 @@ section {
     height: 80vh;
     width: 900px;
     margin: auto;
+    position: relative;
     /* background-color: pink; */
 }
 
@@ -462,15 +463,19 @@ footer p {
     transition: .6s ease-in-out;
     display: flex;
     flex-direction: column;
-    /* gap: 1rem; */
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     cursor: pointer;
     /* padding: 0.5rem; */
     /* overflow: hidden; */
     opacity: 0;
+    /* background-color: red; */
 
 }
 .project-text-cover {
     padding: 1rem;
+    font-size: 0.8rem;
 }
 .details-container {
     overflow: hidden;
@@ -485,6 +490,10 @@ footer p {
     bottom: 0px;
     opacity: 1;
 }
-.cover-jobsphere {
-    gap: 0.5rem;
+.text-container {
+    color: black;
+}
+.title-cover {
+    font-size: 1.5rem;
+    text-align: center;
 }
