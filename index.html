@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70175bfd8a.js" crossorigin="anonymous"></script>
     <title>Ahmad Shaukat</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
@@ -11,7 +12,7 @@
 
 <body>
     <nav id="big-nav">
-        <div class="logo">Ahmad Shaukat</div>
+        <div class="logo">Ahmad<span class="logo-period">.</span></div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -22,7 +23,7 @@
         </div>
     </nav>
     <nav id="small-nav">
-        <div class="logo">Ahmad Shaukat</div>
+        <div class="logo">Ahmad<span class="logo-period">.</span></div>
         <div class="small-nav-icon">
             <div class="ham-icon" onclick="toggleMenu()">
                 <span></span>
@@ -41,7 +42,7 @@
     <section id="profile">
         <div class="section__pic-container">
 
-            <img src="./assets/profile-pic.jpg" alt="Ahmad Shaukat profile pic" class="profile-img">
+            <img src="./assets/profile-pic.jpg" alt="Ahmad Shaukat profile pic" class="profile-img" id="profile-image-main">
         </div>
         <div class="section__text">
             <p class="section__text__p1 greet-text">Hello. I'm</p>
@@ -61,7 +62,7 @@
                 <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon"
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon linkedin-icon"
                     onclick="location.href = `https://`">
                 <img src="./assets/github.png" alt="My linkedin profile" class="icon"
                     onclick="location.href = `https://`">
@@ -79,17 +80,19 @@
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>1+ year Full Stack Development</p>
+                        <h3 class="about-heading">Experience</h3>
+                        <p>2+ year Full Stack Development</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="experience icon" class="icon">
-                        <h3>Education</h3>
+                        <h3 class="about-heading">Education</h3>
                         <p>App Academy Software Engineering</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Software engineer who speaks fluent Python and JavaScript, occasionally in my sleep. I turn caffeine into code and turn bugs into mysterious adventures. When not debugging the universe, you'll find me contemplating the ultimate question: 'To merge, or not to merge?</p>
+                    <p>Software engineer who speaks fluent Python and JavaScript, occasionally in my sleep. I turn
+                        caffeine into code and turn bugs into mysterious adventures. When not debugging the universe,
+                        you'll find me contemplating the ultimate question: 'To merge, or not to merge?</p>
                 </div>
             </div>
         </div>
@@ -110,13 +113,14 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="experience logo" class="icon">
+                            <!-- <img src="./assets/checkmark.png" alt="experience logo" class="icon"> -->
                             <div>
-                                <h3>CSS</h3>
+                                <!-- <h3>CSS</h3> -->
+                                <img src="/assets/css3-logo.svg" class="tech-logo">
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="experience logo" class="icon">
+                            <img src="./assets/html-5.svg" alt="html logo" class="tech-logo">
                             <div>
                                 <h3>Javascript</h3>
                             </div>
@@ -202,7 +206,10 @@
                 <div class="details-container color-container">
                     <div class="cover cover-jobsphere">
                         <p class="title-cover">JobSphere</p>
-                        <p class="project-text-cover">JobSphere is a comprehensive Job Management platform, facilitating users in the pursuit of employment opportunities, networking with other users, and tracking their interview progress. Developed using React, Flask, PostgreSQL, Jobsphere employs multiple APIs to furnish users with real-time jobs opening and pertinent news updates. </p>
+                        <p class="project-text-cover">JobSphere is a comprehensive Job Management platform, facilitating
+                            users in the pursuit of employment opportunities, networking with other users, and tracking
+                            their interview progress. Developed using React, Flask, PostgreSQL, Jobsphere employs
+                            multiple APIs to furnish users with real-time jobs opening and pertinent news updates. </p>
                         <div class="btn-container">
                             <button class="btn btn-color-2 project-btn"
                                 onClick="location.href='https://github.com/Ahmad-Shaukat/JobSphere'">Github</button>
@@ -231,7 +238,9 @@
                 <div class="details-container color-container">
                     <div class="cover">
                         <p class="title-cover">Robinhood</p>
-                        <p class="project-text-cover">This platforms allows users to seamlessly navigate, purchase, and sell stocks using real-time data. Constructed using React, Flask, and PostgreSQL, the website integrate different public APIs to furnish user with up to date information.</p>
+                        <p class="project-text-cover">This platforms allows users to seamlessly navigate, purchase, and
+                            sell stocks using real-time data. Constructed using React, Flask, and PostgreSQL, the
+                            website integrate different public APIs to furnish user with up to date information.</p>
                         <div class="btn-container">
                             <button class="btn btn-color-2 project-btn"
                                 onClick="location.href='https://github.com/JustAGyro/Group-Portfoilio-Project-Robinhood'">Github</button>
@@ -261,7 +270,9 @@
                 <div class="details-container color-container">
                     <div class="cover">
                         <p class="title-cover">AirBnB</p>
-                        <p class="project-text-cover">This web application faciliates users in creating, managing and reserving rental spots. Developed employing React, Node.js, Express and SQL, the platform draws inspiration from AirBnB website.</p>
+                        <p class="project-text-cover">This web application faciliates users in creating, managing and
+                            reserving rental spots. Developed employing React, Node.js, Express and SQL, the platform
+                            draws inspiration from AirBnB website.</p>
                         <div class="btn-container">
                             <button class="btn btn-color-2 project-btn"
                                 onClick="location.href='https://google.com'">Github</button>
@@ -287,23 +298,108 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contacts'">
     </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:ahmadshaukat@yahoo.com">ahmadshaukat@yahoo.com</a></p>
+    <section class="contacts section" id=contacts>
+        <div class="contact__container grid">
+            <div class="contact__data">
+                <h2 class="section__title-2">
+                    <span>Contact Me.</span>
+                </h2>
+                <p class="contact__description-1">
+                    Feel Free to contact me anytime. I read all the emails
+                </p>
+                <p class="contact__description-2">Please leave your name, email and message. Thank you</p>
+
+                <div class="geometric-box"></div>
             </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com">Linkedin</a></p>
+            <div class="contact__mail">
+                <h2 class="contact__title">
+                    Send Me A Message
+                </h2>
+                <form class="contact__form" id="contact-form">
+                    <div class="contact__group">
+                        <div class="contact__box">
+                            <input type="text" class="contact__input" name='user_name' id="name" required
+                                placeholder="First Name">
+                            <label for="name" class="contact__label">First Name</label>
+                        </div>
+
+                        <div class="contact__box">
+                            <input type="email" class="contact__input" name='user_email' id="email" required
+                                placeholder="Email Address">
+                            <label for="email" class="contact__label">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="contact__box">
+
+                        <input type="text" class="contact__input" name='user_subject' id="subject" required
+                            placeholder="Subject">
+                        <label for="subject" class="contact__label">Subject</label>
+                    </div>
+                    <div class="contact__box contact__area">
+                        <textarea name="user_message" id="message" class="contact__input" required
+                            placeholder="Message"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                    </div>
+                    <div class="validation-message">
+
+                        <p class="contact__message" id="contact-message"></p>
+                    </div>
+                    <div class="contact__button-container">
+
+                        <button type="submit" class="contact__button button">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                    <div class="contact__linkedin-link">
+                        <p>Find me on Linkedin : </p>
+                        <a><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </form>
             </div>
+            
         </div>
+
+        <div class="footer">
+        <nav class="nav-links">
+            <ul class="nav-links">
+
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &#169; 2023 Ahmad Shaukat. All Rights Reserved </p> 
+    </div>
+        <!-- </div> -->
     </section>
-    <footer>
+    <!-- <div class="footer">
+        <nav class="nav-links">
+            <ul class="nav-links">
+
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &#169; 2023 Ahmad Shaukat. All Rights Reserved </p> 
+    </div> -->
+    <!-- <div class="footer">
+        <div class="nav-links">
+            <ul class="nav-links">
+
+            <a href="#about" oncpck="toggleMenu()">About</a>
+                <a href="#experience" onclick="toggleMenu()">Experience</a>
+                <a href="#projects" onclick="toggleMenu()">Projects</a>
+                <a href="#contacts" onclick="toggleMenu()">Contact</a>
+            </ul>
+        </div>
+        <p>Copyright &#169; 2023 Ahmad Shaukat. All Rights Reserved </p> 
+    </div> -->
+    <!-- <footer>
         <nav class="nav-links">
             <ul class="nav-links">
 
@@ -314,7 +410,8 @@
             </ul>
         </nav>
         <p>Copyright &#169; 2023 Ahmad Shaukat. All Rights Reserved </p>
-    </footer>
+    </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 
