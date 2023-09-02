@@ -3,6 +3,7 @@
         height: 83vh;
         margin-bottom: 6rem;
     }
+    
 }
 
 
@@ -14,7 +15,11 @@
     }
     #small-nav {
         display: flex;
+        z-index: 100;
         /* background-color: teal; */
+    }
+    #profile {
+        z-index: 1;
     }
     #experience, .experience-details-container {
         margin-top: 2rem;
@@ -60,6 +65,11 @@
     .project-text-cover {
         font-size: 0.8rem;
     }
+    .profile-img {
+        /* border: 2px solid red; */
+        height: 310px;
+        width:250px ;
+    }
 }
 @media screen and (max-width: 600px) {
 #contact, footer {
@@ -69,11 +79,27 @@
     /* width: fit-content; */
 
 }
+.small-nav-links {
+    z-index: 500;
+}
+
+
+#small-nav li{
+    display: flex;
+    z-index: 100;
+    background-color: #edf6f9
+}
+.section__pic-container {
+    z-index: 0;
+    /* border: 2px solid red; */
+}
+
+
 article {
     font-size: 1rem;
 
 }
-footer nav {
+.footer nav {
     height: fit-content;
     margin-bottom: 2rem;
 }
@@ -145,7 +171,7 @@ footer nav {
 .static-text {}
 .wrapper {
     display: inline-flex;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     
 }
 .wrapper .static-text {
@@ -169,11 +195,11 @@ footer nav {
     list-style: none;
     font-size: 20px;
     font-weight: 500;
-    color: red;
+    color: #ef476f;
     text-align: start;
     position: relative;
     top: 0;
-    animation: slide 3s steps(2) infinite;
+    animation: slide 6s steps(2) infinite;
 }
 @keyframes slide {
     100% {
@@ -191,12 +217,25 @@ footer nav {
     background-color: white;
     left: 0;
     width: 100%;
-    border-left: 2px solid red;
-    animation: typing 1.5s steps(10) infinite;
+    border-left: 2px solid #ef476f;
+    animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
+    50% {
+        left: 100;
+        margin: 0 -209px 0 212px;
+        
+    }
     100% {
-        left: 100%;
-        margin: 0 -35px 0 35px;
+        left: 0%;
+        /* margin: 0 -35px 0 35px; */
     }
 }
+@keyframes profile-slide {
+    100% {
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+
+
