@@ -138,7 +138,11 @@ a {
     height: 100px;
 }
 .linkedin-icon {
-    background-color: green;
+    /* background-color: green; */
+    /* background-color: #0077Bcol5; */
+    color:rgb(0, 255, 51);
+    background-color: transparent
+
 }
 .small-nav-links a {
     display: block;
@@ -206,6 +210,7 @@ section {
 .section-container {
     display: flex;
 }
+
 
 #profile {
     display: flex;
@@ -285,6 +290,10 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    /* color: white; */
+}
+.btn-container {
+    color: white;
 }
 
 .btn {
@@ -394,22 +403,31 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    /* border: 2px solid red; */
 }
 .article-container {
     display: flex;
     text-align: initial;
+    margin-top: 30px;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1rem;
     justify-content: space-around;
-    margin-top: 1rem;
+    /* border: 2px solid red; */
+    /* margin-top: 1rem; */
     
+}
+.details-container-heading {
+    font-size: 26px;
+    margin-bottom: 2rem;
 }
 article {
     display: flex;
     width: 10rem;
     /* justify-content: space-around; */
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0.5rem; */
     /* margin-top: 0.75rem; */
 }
 article .icon {
@@ -437,7 +455,8 @@ article h3 {
     color: black;
 }
 .project-btn {
-    color: black;
+    /* color: black; */
+    color: white;
     border-color:rgb(163, 163, 163) ;
 }
 /* #contact {
@@ -496,7 +515,9 @@ article h3 {
     position: absolute;
     left: -350px;
     bottom: -350px;
-    background-color: white;
+    /* background-color: white; */
+    background-color: black;
+    color: white;
     width: 100%;
     height: 100%;
     transition: .6s ease-in-out;
@@ -515,6 +536,7 @@ article h3 {
 .project-text-cover {
     padding: 1rem;
     font-size: 0.8rem;
+    color: white;
 }
 .details-container {
     overflow: hidden;
@@ -531,10 +553,17 @@ article h3 {
 }
 .text-container {
     color: black;
+
+}
+.text-container p {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
 }
 .title-cover {
     font-size: 1.5rem;
     text-align: center;
+    color: white;
 }
 .section__title-1 span, 
 .section__title-2 span {
@@ -742,5 +771,6 @@ margin-top: 1rem;
 .success {
     color: green;
 }
+
 
 
