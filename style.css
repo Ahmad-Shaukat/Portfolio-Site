@@ -6,18 +6,14 @@
     padding: 0;
     /* scroll-behavior: smooth; */
 }
-html:focus-within {
-    /* animation-name: smoothscroll2; */
-    scroll-behavior: smooth;
-  }
 
 body {
     font-family: 'Poppins', sans-serif;
     ;
 }
 
-html:focus-within {
-    scroll-behavior: smooth !important;
+html {
+    scroll-behavior: smooth;
   }
 
 p {
@@ -55,15 +51,32 @@ a {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
+    position: relative;
+    display: inline-block;
+    /* background-color: blue; */
 
 }
 
-a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-    text-decoration-color: grey;
-    /* background-color: blue; */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ef476f;
+    transform-origin: bottom right;
+    transition:transform 0.25s ease-out;
+    /* transition: height 0.25s ease-out; */
+    /* color: green; */
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    /* height-origi */
+    /* height: 2px; */
 }
 
 .logo {
@@ -81,6 +94,16 @@ a:hover {
 .small-nav-icon {
     position: relative;
     display: inline-block;
+}
+.logo-period {
+    display: inline-block;
+    color:#ef476f;
+    font-size: 40px;
+    /* height: 40px; */
+    /* background-color: red; */
+
+    
+    /* width: 30px; */
 }
 
 .ham-icon {
@@ -110,7 +133,17 @@ a:hover {
     transition: all 0.3 ease-in-out;
     /* background-color: red; */
 }
+.tech-logo {
+    width: 100px;
+    height: 100px;
+}
+.linkedin-icon {
+    /* background-color: green; */
+    /* background-color: #0077Bcol5; */
+    color:rgb(0, 255, 51);
+    background-color: transparent
 
+}
 .small-nav-links a {
     display: block;
     padding: 10px;
@@ -162,6 +195,7 @@ a:hover {
 
     border-radius: 50%;
     width: 300px;
+    position: relative;
     /* height: 300px; */
 }
 
@@ -176,6 +210,7 @@ section {
 .section-container {
     display: flex;
 }
+
 
 #profile {
     display: flex;
@@ -255,6 +290,10 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    /* color: white; */
+}
+.btn-container {
+    color: white;
 }
 
 .btn {
@@ -299,6 +338,9 @@ section {
 
 #about {
     position: relative;
+}
+.about-heading {
+    color: #ef476f;
 }
 
 .about-containers {
@@ -361,22 +403,31 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    /* border: 2px solid red; */
 }
 .article-container {
     display: flex;
     text-align: initial;
+    margin-top: 30px;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1rem;
     justify-content: space-around;
-    margin-top: 1rem;
+    /* border: 2px solid red; */
+    /* margin-top: 1rem; */
     
+}
+.details-container-heading {
+    font-size: 26px;
+    margin-bottom: 2rem;
 }
 article {
     display: flex;
     width: 10rem;
     /* justify-content: space-around; */
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0.5rem; */
     /* margin-top: 0.75rem; */
 }
 article .icon {
@@ -404,16 +455,17 @@ article h3 {
     color: black;
 }
 .project-btn {
-    color: black;
+    /* color: black; */
+    color: white;
     border-color:rgb(163, 163, 163) ;
 }
-#contact {
+/* #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
 
-}
+} */
 .contact-info-upper-container {
     display: flex;
   justify-content: center;
@@ -442,14 +494,20 @@ article h3 {
 .email-icon  {
     height: 2.5rem;
 }
+.contacts {
+    position: relative;
+}
 
 
 /* footer section */
-footer {
-    height: 26vh;
+.footer {
+    margin-top: 15rem;
+    height: 100px;
     margin: 0 1rem;
+    position: relative;
+    /* z-index: 1000; */
 }
-footer p {
+.footer p {
     text-align: center;
     margin-top: 1rem;
 }
@@ -457,7 +515,9 @@ footer p {
     position: absolute;
     left: -350px;
     bottom: -350px;
-    background-color: white;
+    /* background-color: white; */
+    background-color: black;
+    color: white;
     width: 100%;
     height: 100%;
     transition: .6s ease-in-out;
@@ -476,6 +536,7 @@ footer p {
 .project-text-cover {
     padding: 1rem;
     font-size: 0.8rem;
+    color: white;
 }
 .details-container {
     overflow: hidden;
@@ -492,8 +553,224 @@ footer p {
 }
 .text-container {
     color: black;
+
+}
+.text-container p {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
 }
 .title-cover {
     font-size: 1.5rem;
     text-align: center;
+    color: white;
 }
+.section__title-1 span, 
+.section__title-2 span {
+  z-index: 5;
+  position: relative;
+}
+.section__title-1::after, 
+.section__title-2::after {
+  content: "";
+  width: 40px;
+  height: 28px;
+  background-color: hsla(14, 98%, 50%, .2);
+  position: absolute;
+  top: -2px;
+  right: -8px;
+}
+.section__title-1, 
+.section__title-2 {
+  position: relative;
+  font-size: 1.5rem;
+  width: max-content;
+  margin: .75rem auto 2rem;
+}
+
+.geometric-box {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: hsl(14, 98%, 50%);
+    rotate: -30deg;
+  }
+  .geometric-box::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 3px solid hsl(0, 0%, 0%);;
+    left: -5px;
+    top: -5px;
+  }
+  .contact {
+    padding-bottom: 0;
+
+  }
+.contact__container {
+    position: relative;
+    display: grid;
+    gap: 1.5rem;
+
+    grid-template-rows: 200px max-content max-content;
+    row-gap: 0;
+    /* background-color: red; */
+}
+.contact__data {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: hsl(0, 0%, 83%);
+    padding: 3rem 1.5rem 3.5rem;
+    margin-left: auto;
+    z-index: 5;
+    border-bottom: 4px solid hsl(14, 98%, 50%);
+}
+.contact__data .section__title-2 {
+    margin: 0 0 1.5rem;
+    transform: translate(-3rem);
+
+}
+.contact__description-1 {
+   color: hsl(0, 0%, 0%);
+   font-weight: 500; 
+   margin-bottom: 2rem;
+}
+.contact__description-2 {
+    color: hsl(0, 0%, 0%);
+    font-size:.813rem ;
+    /* background-color: green; */
+}
+.contact__data .geometric-box {
+  top: 2rem;  
+  right: 2.5rem;
+  
+
+}
+.contact__mail {
+    position: relative;
+    /* height: 300px; */
+    height: 460px;
+    background-color:hsl(0, 0%, 6%);
+    padding: 5rem 1.5rem 2.5rem;
+    /* margin-top: -1.5rem; */
+    margin-top: 5rem;
+    z-index: 1;
+    border-bottom: 4px solid hsl(14, 98%, 50%);
+
+}
+.contact__title {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    /* margin-bottom: 1rem; */
+    text-align: center;
+}
+.contact_form, 
+.contact_group {
+    display: grid;
+    row-gap: 1.5rem;
+}
+.contact__box {
+position: relative;
+width: 50%;
+height: 37px;
+/* border: 2px solid red; */
+margin: auto;
+margin-top: 1rem;
+
+}
+.contact__input,
+.contact__button {
+    font-size: normal;
+    outline: none;
+    border: none;
+    
+    /* background-color: red; */
+}
+.contact__box input {
+    border: none;
+    outline: none;
+    /* background-color: red; */
+}
+.contact__box textarea {
+    border: none;
+    outline: none;
+}
+.contact__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+    /* background-color: black; */
+    border: 3px solid grey;
+    /* color: white; */
+    color: black;
+    padding: 2px;
+    letter-spacing: 1px;
+}
+.contact__button {
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+    margin: auto;
+    font-size: 0.9rem;
+    background-color: white;
+    border: none;
+    transition: .3s;
+
+}
+.contact__button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+
+}
+.contact__button:hover {
+    background-color: #3a86ff;
+    color: white;
+    cursor: pointer;
+}
+.contact__linkedin-link {
+    color: white;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.contact__linkedin-link a {
+    color: #0077B5;
+    font-size: 40px;
+}
+
+.contact__linkedin-link p {
+    color: white;
+}
+.contact__linkedin-link a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.validation-message {
+    /* background-color: red; */
+    /* border: 2px solid green; */
+    height: 20px;
+    /* background-color: red; */
+}
+.validation-message p {
+    /* margin: auto; */
+    /* background-color: green; */
+    text-align: center;
+    padding: 3px;
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}
+
+
+
