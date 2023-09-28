@@ -79,8 +79,12 @@
     /* width: fit-content; */
 
 }
+
 .small-nav-links {
     z-index: 500;
+}
+.section__title-2 span {
+    /* margin-left: 10px; */
 }
 
 
@@ -167,6 +171,16 @@ article {
 /* .cover p {
     font-size: 5px;
 } */
+}
+@media screen and (max-width: 400px) {
+    #contact-heading-dyna {
+        margin: 0 0 0.5rem;
+        /* background-color: red; */
+    }
+    .contact__data {
+        margin: 0 0 0 0.5rem;
+    }
+    
 }
 .static-text {}
 .wrapper {
