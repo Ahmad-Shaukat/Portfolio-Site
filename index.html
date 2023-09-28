@@ -18,7 +18,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contacts">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -59,13 +59,13 @@
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Ahmad_Shaukat_resume.pdf')">
                     Resume</button>
-                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info</button>
+                <button class="btn btn-color-1" onclick="location.href ='./#contacts'">Contact Me</button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon linkedin-icon"
-                    onclick="location.href = `https://`">
+                    onclick="window.open( 'https://www.linkedin.com/in/ahmad-shaukatt', '_blank');">
                 <img src="./assets/github.png" alt="My linkedin profile" class="icon"
-                    onclick="location.href = `https://`">
+                onclick="window.open( 'https://www.github.com/ahmad-shaukat', '_blank');">
             </div>
         </div>
     </section>
@@ -214,13 +214,15 @@
                         <p class="title-cover">JobSphere</p>
                         <p class="project-text-cover">JobSphere is a comprehensive Job Management platform, facilitating
                             users in the pursuit of employment opportunities, networking with other users, and tracking
-                            their interview progress. Developed using React, Flask, PostgreSQL, Jobsphere employs
+                            their interview progress. It is fully responsive, Developed using React, Flask, PostgreSQL, Jobsphere employs
                             multiple APIs to furnish users with real-time jobs opening and pertinent news updates. </p>
                         <div class="btn-container">
                             <button class="btn btn-color-2 project-btn"
-                                onClick="location.href='https://github.com/Ahmad-Shaukat/JobSphere'">Github</button>
+        
+                                onclick="window.open( 'https://github.com/ahmad-shaukat/JobSphere', '_blank');">
+                                Github</button>
                             <button class="btn btn-color-2 project-btn"
-                                onClick="location.href='https://aa-jobsphere.onrender.com'">
+                            onclick="window.open( 'https://jobsphere-q4t2.onrender.com', '_blank');">
                                 Live Demo
 
                             </button>
@@ -230,28 +232,21 @@
                         <img src="./assets/job-sphere.png" alt="project 1" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">JobSphere</h2>
-                    <!-- <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onClick="location.href='https://google.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://google.com'">
-                            Live Demo
-
-                        </button>
-                    </div> -->
+                  
                 </div>
 
 
                 <div class="details-container color-container">
                     <div class="cover">
                         <p class="title-cover">Robinhood</p>
-                        <p class="project-text-cover">This platforms allows users to seamlessly navigate, purchase, and
+                        <p class="project-text-cover">This is a group project which allows users to seamlessly navigate, purchase, and
                             sell stocks using real-time data. Constructed using React, Flask, and PostgreSQL, the
                             website integrate different public APIs to furnish user with up to date information.</p>
                         <div class="btn-container">
                             <button class="btn btn-color-2 project-btn"
-                                onClick="location.href='https://github.com/JustAGyro/Group-Portfoilio-Project-Robinhood'">Github</button>
+                            onclick="window.open( 'https://github.com/ahmad-shaukat/Group-Portfoilio-Project-Robinhood', '_blank');">Github</button>
                             <button class="btn btn-color-2 project-btn"
-                                onClick="location.href='https://aa-robinhood.onrender.com'">
+                            onclick="window.open( 'https://robinhood-xuut.onrender.com', '_blank');">
                                 Live Demo
 
                             </button>
@@ -261,14 +256,7 @@
                         <img src="./assets/Robinhood.png" alt="project 1" class="project-img robin-img">
                     </div>
                     <h2 class="experience-sub-title project-title">Robinhood</h2>
-                    <!-- <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onClick="location.href='https://google.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://google.com'">
-                            Live Demo
-
-                        </button>
-                    </div> -->
+                    
 
                 </div>
 
@@ -281,8 +269,8 @@
                             draws inspiration from AirBnB website.</p>
                         <div class="btn-container">
                             <button class="btn btn-color-2 project-btn"
-                                onClick="location.href='https://google.com'">Github</button>
-                            <button class="btn btn-color-2 project-btn" onClick="location.href='https://google.com'">
+                            onclick="window.open( 'https://github.com/ahmad-shaukat/AirBnB', '_blank');">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="window.open( 'https://airbnb-dg0w.onrender.com', '_blank');">
                                 Live Demo
 
                             </button>
@@ -292,14 +280,7 @@
                         <img src="./assets/Airbnb.png" alt="project 1" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">AirBnB</h2>
-                    <!-- <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onClick="location.href='https://google.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://google.com'">
-                            Live Demo
-
-                        </button>
-                    </div> -->
+                   
 
                 </div>
             </div>
@@ -309,7 +290,7 @@
     <section class="contacts section" id=contacts>
         <div class="contact__container grid">
             <div class="contact__data">
-                <h2 class="section__title-2">
+                <h2 class="section__title-2" id="contact-heading-dyna">
                     <span>Contact Me.</span>
                 </h2>
                 <p class="contact__description-1">
@@ -381,42 +362,7 @@
     </div>
         <!-- </div> -->
     </section>
-    <!-- <div class="footer">
-        <nav class="nav-links">
-            <ul class="nav-links">
-
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
-            </ul>
-        </nav>
-        <p>Copyright &#169; 2023 Ahmad Shaukat. All Rights Reserved </p> 
-    </div> -->
-    <!-- <div class="footer">
-        <div class="nav-links">
-            <ul class="nav-links">
-
-            <a href="#about" oncpck="toggleMenu()">About</a>
-                <a href="#experience" onclick="toggleMenu()">Experience</a>
-                <a href="#projects" onclick="toggleMenu()">Projects</a>
-                <a href="#contacts" onclick="toggleMenu()">Contact</a>
-            </ul>
-        </div>
-        <p>Copyright &#169; 2023 Ahmad Shaukat. All Rights Reserved </p> 
-    </div> -->
-    <!-- <footer>
-        <nav class="nav-links">
-            <ul class="nav-links">
-
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
-            </ul>
-        </nav>
-        <p>Copyright &#169; 2023 Ahmad Shaukat. All Rights Reserved </p>
-    </footer> -->
+   
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
